@@ -1,0 +1,36 @@
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  margin-top: 80px;
+  padding: 0 66px;
+}
+
+.container img {
+  transform: scale(0.5); /* 将图片缩小到 0.5 倍 */
+}
+
+.container p {
+  text-align: center;
+  user-select: none;
+  color: var(--text-color-placeholder, #9da3ac);
+  font: var(--text-p1-regular);
+}
+
+.container span {
+  color: var(--text-color-primary, #222529);
+  font: var(--text-p1-bold);
+}
+
+.container span:hover {
+  cursor: pointer;
+}
+
+.add {
+  position: absolute;
+  top: 70px;
+  right: 140px;
+}

@@ -1,15 +1,21 @@
-import { SVGProps } from "react"
-import Logo from "./logo"
+import { SVGProps } from "react";
+import Logo from "./logo";
+import Cube from "./cube";
+import Add from "./add";
 import {
   LucideProps,
   Moon,
   SunMedium,
   Twitter,
   Figma,
+  ArrowUpRight,
+  Loader,
+  Download,
   type Icon as LucideIcon,
-} from "lucide-react"
+} from "lucide-react";
+import Maigc from "./magic";
 
-export type Icon = LucideIcon
+export type Icon = LucideIcon;
 
 export const Icons = {
   sun: SunMedium,
@@ -17,6 +23,12 @@ export const Icons = {
   twitter: Twitter,
   logo: Logo,
   figma: Figma,
+  cube: Cube,
+  magic: Maigc,
+  add: Add,
+  loader: Loader,
+  arrowUpRight: ArrowUpRight,
+  arrowDownToLine: Download,
   gitHub: (props: LucideProps) => (
     <svg viewBox="0 0 438.549 438.549" {...props}>
       <path
@@ -50,7 +62,7 @@ export const Icons = {
           opacity=".5"
         />
       </svg>
-    )
+    );
   },
 
   SolarGalleryBoldDuotone(props: SVGProps<SVGSVGElement>) {
@@ -75,7 +87,7 @@ export const Icons = {
           opacity=".4"
         />
       </svg>
-    )
+    );
   },
 
   SolarDownloadMinimalisticBoldDuotone(props: SVGProps<SVGSVGElement>) {
@@ -95,7 +107,7 @@ export const Icons = {
           <path d="M12 16.75a.75.75 0 0 0 .553-.244l4-4.375a.75.75 0 1 0-1.107-1.012l-2.696 2.95V3a.75.75 0 0 0-1.5 0v11.068l-2.696-2.95a.75.75 0 0 0-1.108 1.013l4 4.375a.75.75 0 0 0 .554.244" />
         </g>
       </svg>
-    )
+    );
   },
 
   SolarStarsBoldDuotone(props: SVGProps<SVGSVGElement>) {
@@ -117,7 +129,7 @@ export const Icons = {
           opacity=".5"
         />
       </svg>
-    )
+    );
   },
 
   SolarCloudUploadBoldDuotone(props: SVGProps<SVGSVGElement>) {
@@ -141,7 +153,7 @@ export const Icons = {
           clipRule="evenodd"
         />
       </svg>
-    )
+    );
   },
 
   SolarGalleryRemoveLineDuotone(props: SVGProps<SVGSVGElement>) {
@@ -167,7 +179,7 @@ export const Icons = {
           <path d="m22 2l-6 6m0-6l6 6" />
         </g>
       </svg>
-    )
+    );
   },
   Telegram(props: SVGProps<SVGSVGElement>) {
     return (
@@ -180,7 +192,7 @@ export const Icons = {
         <title>Telegram</title>
         <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
       </svg>
-    )
+    );
   },
 
   X(props: SVGProps<SVGSVGElement>) {
@@ -194,7 +206,7 @@ export const Icons = {
         <title>X</title>
         <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
       </svg>
-    )
+    );
   },
 
   Reddit(props: SVGProps<SVGSVGElement>) {
@@ -208,7 +220,7 @@ export const Icons = {
         <title>Reddit</title>
         <path d="M12 0C5.373 0 0 5.373 0 12c0 3.314 1.343 6.314 3.515 8.485l-2.286 2.286C.775 23.225 1.097 24 1.738 24H12c6.627 0 12-5.373 12-12S18.627 0 12 0Zm4.388 3.199c1.104 0 1.999.895 1.999 1.999 0 1.105-.895 2-1.999 2-.946 0-1.739-.657-1.947-1.539v.002c-1.147.162-2.032 1.15-2.032 2.341v.007c1.776.067 3.4.567 4.686 1.363.473-.363 1.064-.58 1.707-.58 1.547 0 2.802 1.254 2.802 2.802 0 1.117-.655 2.081-1.601 2.531-.088 3.256-3.637 5.876-7.997 5.876-4.361 0-7.905-2.617-7.998-5.87-.954-.447-1.614-1.415-1.614-2.538 0-1.548 1.255-2.802 2.803-2.802.645 0 1.239.218 1.712.585 1.275-.79 2.881-1.291 4.64-1.365v-.01c0-1.663 1.263-3.034 2.88-3.207.188-.911.993-1.595 1.959-1.595Zm-8.085 8.376c-.784 0-1.459.78-1.506 1.797-.047 1.016.64 1.429 1.426 1.429.786 0 1.371-.369 1.418-1.385.047-1.017-.553-1.841-1.338-1.841Zm7.406 0c-.786 0-1.385.824-1.338 1.841.047 1.017.634 1.385 1.418 1.385.785 0 1.473-.413 1.426-1.429-.046-1.017-.721-1.797-1.506-1.797Zm-3.703 4.013c-.974 0-1.907.048-2.77.135-.147.015-.241.168-.183.305.483 1.154 1.622 1.964 2.953 1.964 1.33 0 2.47-.81 2.953-1.964.057-.137-.037-.29-.184-.305-.863-.087-1.795-.135-2.769-.135Z" />
       </svg>
-    )
+    );
   },
 
   BxsZap(props: SVGProps<SVGSVGElement>) {
@@ -226,7 +238,7 @@ export const Icons = {
           d="M20.98 11.802a.995.995 0 0 0-.738-.771l-6.86-1.716l2.537-5.921a.998.998 0 0 0-.317-1.192a.996.996 0 0 0-1.234.024l-11 9a1 1 0 0 0 .39 1.744l6.719 1.681l-3.345 5.854A1.001 1.001 0 0 0 8 22a.995.995 0 0 0 .6-.2l12-9a1 1 0 0 0 .38-.998"
         />
       </svg>
-    )
+    );
   },
 
   MajesticonsMenuAlt(props: SVGProps<SVGSVGElement>) {
@@ -241,13 +253,13 @@ export const Icons = {
       >
         <g fill="none">
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M2 8a2 2 0 0 1 2-2h16a2 2 0 1 1 0 4H4a2 2 0 0 1-2-2zm0 8a2 2 0 0 1 2-2h16a2 2 0 1 1 0 4H4a2 2 0 0 1-2-2z"
             fill="currentColor"
           />
         </g>
       </svg>
-    )
+    );
   },
-}
+};

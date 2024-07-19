@@ -1,0 +1,160 @@
+/**
+ * Do not edit directly
+ * Generated on Fri, 24 May 2024 11:27:41 GMT
+ */
+
+:root {
+  --button-split-border-radius-none: 0;
+  --button-float-background-color-active: #f1f2f4;
+  --button-float-background-color-hover: #f6f7f9;
+  --button-line-height-large: 22px;
+  --button-line-height-medium: 22px;
+  --button-line-height-small: 18px;
+  --button-float-color-active: var(--color-static-black);
+  --button-float-color-hover: var(--color-static-black);
+  --button-float-color-regular: var(--color-static-black);
+  --button-float-background-color-regular: var(--color-static-white);
+  --button-danger-color-secondary-active: var(--color-red-800);
+  --button-danger-color-secondary-hover: var(--color-red-700);
+  --button-danger-border-color-secondary-active: var(--color-red-800);
+  --button-danger-border-color-secondary-hover: var(--color-red-700);
+  --button-danger-border-color-secondary-regular: var(--color-red-600);
+  --button-danger-background-color-primary-active: var(--color-red-800);
+  --button-danger-background-color-primary-hover: var(--color-red-700);
+  --button-danger-background-color-primary-regular: var(--color-red-600);
+  --button-quiet-color-active: var(--color-gray-900);
+  --button-dropdown-space-gap-horizontal-large: var(--spacing-100);
+  --button-dropdown-space-gap-horizontal-medium: var(--spacing-100);
+  --button-dropdown-space-gap-horizontal-small: var(--spacing-50);
+  --button-dropdown-space-right-large: var(--spacing-200);
+  --button-dropdown-space-right-medium: var(--spacing-200);
+  --button-dropdown-space-right-small: var(--spacing-100);
+  --button-dropdown-space-left-large: var(--spacing-300);
+  --button-dropdown-space-left-medium: var(--spacing-300);
+  --button-dropdown-space-left-small: var(--spacing-200);
+  --button-icon-space-gap-large: var(--spacing-100);
+  --button-icon-space-gap-medium: var(--spacing-100);
+  --button-icon-space-gap-small: var(--spacing-100);
+  --button-icon-space-right-large: var(--spacing-400);
+  --button-icon-space-right-medium: var(--spacing-300);
+  --button-icon-space-right-small: var(--spacing-200);
+  --button-icon-space-left-large: var(--spacing-300);
+  --button-icon-space-left-medium: var(--spacing-200);
+  --button-icon-space-left-small: var(--spacing-200);
+  --button-space-horizontal-large: var(--spacing-400);
+  --button-space-horizontal-medium: var(--spacing-300);
+  --button-space-horizontal-small: var(--spacing-200);
+  --button-border-color-tertiary-active: var(--color-gray-500);
+  --button-border-color-tertiary-hover: var(--color-gray-400);
+  --button-border-color-tertiary-regular: var(--color-gray-300);
+  --button-background-color-secondary-active: var(--color-gray-500);
+  --button-background-color-secondary-hover: var(--color-gray-400);
+  --button-background-color-secondary-regular: var(--color-gray-300);
+  --button-color-tertiary-active: var(--color-gray-900);
+  --button-color-primary-active: var(--color-static-white);
+  --button-color-primary-hover: var(--color-static-white);
+  --button-color-primary-regular: var(--color-static-white);
+  --button-split-divider-tertiary: var(--border-color-primary-regular);
+  --button-split-divider-secondary: var(--color-transparent-black-300);
+  --button-split-divider-primary: var(--color-transparent-white-500);
+  --button-float-border-color-active: var(--color-transparent-regular);
+  --button-float-border-color-hover: var(--color-transparent-regular);
+  --button-float-border-color-regular: var(--color-transparent-regular);
+  --button-danger-quiet-background-color-disabled: var(
+    --color-transparent-regular
+  );
+  --button-danger-quiet-background-color-active: var(
+    --color-transparent-red-200
+  );
+  --button-danger-quiet-background-color-hover: var(
+    --color-transparent-red-100
+  );
+  --button-danger-quiet-background-color-regular: var(
+    --color-transparent-regular
+  );
+  --button-danger-quiet-color-active: var(--text-color-error);
+  --button-danger-quiet-color-hover: var(--text-color-error);
+  --button-danger-quiet-color-regular: var(--text-color-error);
+  --button-danger-color-secondary-regular: var(--text-color-error);
+  --button-danger-color-primary-active: var(--static-color-white);
+  --button-danger-color-primary-hover: var(--static-color-white);
+  --button-danger-color-primary-regular: var(--static-color-white);
+  --button-danger-border-color-primary-active: var(--color-transparent-regular);
+  --button-danger-border-color-primary-hover: var(--color-transparent-regular);
+  --button-danger-border-color-primary-regular: var(
+    --color-transparent-regular
+  );
+  --button-danger-background-color-secondary-disabled: var(
+    --background-color-primary-regular
+  );
+  --button-danger-background-color-secondary-active: var(
+    --background-color-primary-regular
+  );
+  --button-danger-background-color-secondary-hover: var(
+    --background-color-primary-regular
+  );
+  --button-danger-background-color-secondary-regular: var(
+    --background-color-primary-regular
+  );
+  --button-quiet-color-hover: var(--text-color-primary);
+  --button-quiet-color-regular: var(--text-color-primary);
+  --button-quiet-background-color-disabled: var(--color-transparent-regular);
+  --button-quiet-font-weight: 400;
+  --button-dropdown-arrow-size-large: var(--icon-size-medium);
+  --button-dropdown-arrow-size-medium: var(--icon-size-small);
+  --button-dropdown-arrow-size-small: var(--icon-size-xsmall);
+  --button-font-weight-small: 400;
+  --button-font-weight-medium: 400;
+  --button-font-weight-large: 500;
+  --button-font-size-large: var(--font-size-medium);
+  --button-font-size-medium: var(--font-size-medium);
+  --button-font-size-small: var(--font-size-small);
+  --button-icon-size-large: var(--icon-size-medium);
+  --button-icon-size-medium: var(--icon-size-medium);
+  --button-icon-size-small: var(--icon-size-small);
+  --button-border-radius-large: var(--border-radius-large);
+  --button-border-radius-medium: var(--border-radius-medium);
+  --button-border-radius-small: var(--border-radius-small);
+  --button-border-width: var(--border-width-small);
+  --button-border-color-disabled: var(--border-color-disabled);
+  --button-border-color-secondary-disabled: var(--color-transparent-regular);
+  --button-border-color-secondary-active: var(--color-transparent-regular);
+  --button-border-color-secondary-hover: var(--color-transparent-regular);
+  --button-border-color-secondary-regular: var(--color-transparent-regular);
+  --button-border-color-primary-disabled: var(--color-transparent-regular);
+  --button-border-color-primary-active: var(--color-transparent-regular);
+  --button-border-color-primary-hover: var(--color-transparent-regular);
+  --button-border-color-primary-regular: var(--color-transparent-regular);
+  --button-background-color-disabled: var(--background-color-disabled);
+  --button-background-color-ghost: var(--color-transparent-regular);
+  --button-background-color-tertiary-active: var(
+    --background-color-primary-regular
+  );
+  --button-background-color-tertiary-hover: var(
+    --background-color-primary-regular
+  );
+  --button-background-color-tertiary-regular: var(
+    --background-color-primary-regular
+  );
+  --button-background-color-primary-active: var(--brand-800);
+  --button-background-color-primary-hover: var(--brand-700);
+  --button-background-color-primary-regular: var(--brand-600);
+  --button-color-disabled: var(--text-color-disabled);
+  --button-color-tertiary-hover: var(--text-color-primary);
+  --button-color-tertiary-regular: var(--text-color-primary);
+  --button-color-secondary-active: var(--text-color-primary);
+  --button-color-secondary-hover: var(--text-color-primary);
+  --button-color-secondary-regular: var(--text-color-primary);
+  --button-height-large: var(--height-large);
+  --button-height-medium: var(--height-medium);
+  --button-height-small: var(--height-small);
+  --button-quiet-background-color-active: var(
+    --background-color-transparent-primary-active
+  );
+  --button-quiet-background-color-hover: var(
+    --background-color-transparent-primary-hover
+  );
+  --button-quiet-background-color-regular: var(
+    --background-color-transparent-primary-regular
+  );
+}

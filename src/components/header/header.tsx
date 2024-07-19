@@ -1,5 +1,5 @@
 import styles from "./header.module.css";
-import { Icons } from "./icons";
+import { Icons } from "../icons/icons";
 
 import { Divider } from "antd";
 

@@ -1,9 +1,11 @@
 .header {
+  min-width: 1200px;
   height: 56px;
   padding: 0 120px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--background-color-tertiary-regular);
 }
 
 .title {

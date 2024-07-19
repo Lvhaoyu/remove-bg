@@ -1,0 +1,43 @@
+.footer {
+  height: 56px;
+  padding: 0 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-color-tertiary-regular);
+
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  min-width: 1200px;
+
+  font: var(--text-p1-regular);
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color-primary);
+}
+
+.donate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color-tertiary);
+}
+
+.btn {
+  background-color: var(--color-purple-600);
+  color: var(--button-color-primary-regular);
+  margin-left: 16px;
+}
+.btn:hover {
+  background-color: var(--color-purple-700) !important;
+  color: var(--button-color-primary-regular) !important;
+}
+
+.explain {
+  color: var(--text-color-tertiary);
+}
