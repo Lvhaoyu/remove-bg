@@ -15,6 +15,7 @@
   position: relative;
   width: 360px;
   height: 360px;
+  border: 1px solid var(--border-color-overlay, rgba(0, 0, 0, 0.08));
   background: linear-gradient(
       45deg,
       var(--mosaic-color-dark, #d9dcdf) 25%,
@@ -64,18 +65,27 @@
   height: 100%;
   object-fit: contain;
 }
-.btn {
+.btn,
+.btnDisbale {
   width: 100%;
   background-color: var(--color-purple-600);
-  color: var(--button-color-primary-regular);
+  color: var(--button-color-primary-regular, rgba(255, 255, 255, 0.8));
   height: 40px;
   margin-top: 24px;
   display: flex;
   align-items: center;
 }
+
+.btnDisbale {
+  color: var(--button-color-disabled, #b4b8bf);
+}
 .btn:hover {
   background-color: var(--color-purple-700) !important;
   color: var(--button-color-primary-regular) !important;
+}
+
+.magicDisable {
+  color: var(--button-color-disabled, #b4b8bf);
 }
 
 @keyframes moveDown {
@@ -83,7 +93,7 @@
     top: 0;
   }
   100% {
-    top: 60%;
+    top: 100%;
   }
 }
 
@@ -93,11 +103,7 @@
   height: 120px;
   opacity: 0.6;
   animation: moveDown 3s infinite ease-in-out;
-  background: linear-gradient(
-    270deg,
-    rgba(188, 70, 252, 0.8) 42.93%,
-    rgba(188, 70, 252, 0) 126.25%
-  );
+  background-image: url("/loading.png");
 }
 .dot {
   position: absolute;
@@ -108,7 +114,7 @@
   z-index: -10;
   height: 100%;
   width: 100%;
-  background-color: #ffffff;
+  background-color: var(--background-color-primary-regular);
   background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
   background-size: 16px 16px;
   display: flex;

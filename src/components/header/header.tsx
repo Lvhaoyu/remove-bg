@@ -1,29 +1,40 @@
 import styles from "./header.module.css";
 import { Icons } from "../icons/icons";
 
-import { Divider } from "antd";
+import { Divider, Avatar, message } from "antd";
 
 export const Header = () => {
+  const handleClickTheme = () => {
+    // const currentTheme = document.documentElement.getAttribute("data-theme");
+    // if (currentTheme === "dark") {
+    //   document.documentElement.setAttribute("data-theme", "light");
+    // } else {
+    //   document.documentElement.setAttribute("data-theme", "dark");
+    // }
+    message.info("darkmode is coming for soon.");
+    return false;
+  };
+
   return (
     <header className={styles.header}>
       <h1 className={styles.title}>
-        <Icons.logo width={32} height={32} />
-        <span className={styles.titleContent}>Bg Remove</span>
+        <Avatar shape="square" size={32} src="/logo.png" />
+        <span className={styles.titleContent}>ChaoX Background Remover</span>
       </h1>
       <div className={styles.link}>
         <a href="">
-          <Icons.figma width={24} height={24} />
+          <Icons.figma width={18} height={18} />
         </a>
-        <a href="">
-          <Icons.X width={24} height={24} className={styles.icon} />
+        <a href="https://x.com/uidekko" target="_blank">
+          <Icons.X width={18} height={18} className={styles.icon} />
         </a>
-        <a href="">
-          <Icons.gitHub width={24} height={24} className={styles.icon} />
+        <a href="https://github.com/Lvhaoyu/remove-bg" target="_blank">
+          <Icons.gitHub width={18} height={18} className={styles.icon} />
         </a>
 
         <Divider type="vertical" className={styles.divider} />
-        <a href="">
-          <Icons.moon width={24} height={24} />
+        <a href="#" onClick={handleClickTheme}>
+          <Icons.moon width={18} height={18} />
         </a>
       </div>
     </header>

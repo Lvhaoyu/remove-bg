@@ -1,10 +1,12 @@
 import style from "./content.module.css";
 import { Icons } from "../icons/icons";
-import { Button } from "antd";
+import { Button, message } from "antd";
 import { ExamplePicture } from "./example";
 import { useCallback, useState } from "react";
 import { useDropzone } from "react-dropzone";
 import { removeBackground, Config } from "@imgly/background-removal";
+
+let showMsg = false;
 
 const config: Config = {
   debug: false,
@@ -12,6 +14,12 @@ const config: Config = {
   device: "gpu",
   publicPath: "https://189966.xyz", // path to the wasm files
   progress: (key, current, total) => {
+    if (key.includes("fetch") && !showMsg) {
+      showMsg = true;
+      message.info(
+        "Downloading Al models.This was a little while ago the first time..."
+      );
+    }
     console.log(`Progress for ${key}: ${current}/${total}`);
   },
 };
@@ -83,8 +91,9 @@ export const Content: React.FC = () => {
           </div>
           {loading && (
             <Button
-              className={style.btn}
+              className={style.btnDisbale}
               icon={<Icons.loader width={20} height={20} />}
+              disabled={true}
             >
               Removing
             </Button>
@@ -93,8 +102,14 @@ export const Content: React.FC = () => {
             <Button
               disabled={imageData === ""}
               onClick={removeBg}
-              className={style.btn}
-              icon={<Icons.magic width={32} height={32} />}
+              className={imageData === "" ? style.btnDisbale : style.btn}
+              icon={
+                <Icons.magic
+                  width={32}
+                  height={32}
+                  className={imageData === "" ? style.magicDisable : ""}
+                />
+              }
             >
               Remove
             </Button>

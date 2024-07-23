@@ -41,3 +41,15 @@
 .explain {
   color: var(--text-color-tertiary);
 }
+
+:global(.ant-modal-content) {
+  padding: 0 !important;
+}
+
+.donateContainer {
+  border-radius: 8px;
+  padding: 46px var(--spacing-800, 32px);
+  width: 400px;
+  height: 472px;
+  background-image: url("/donate-bg.png");
+}

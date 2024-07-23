@@ -1,5 +1,4 @@
 import { SVGProps } from "react";
-import Logo from "./logo";
 import Cube from "./cube";
 import Add from "./add";
 import {
@@ -21,7 +20,6 @@ export const Icons = {
   sun: SunMedium,
   moon: Moon,
   twitter: Twitter,
-  logo: Logo,
   figma: Figma,
   cube: Cube,
   magic: Maigc,
