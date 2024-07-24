@@ -30,7 +30,9 @@ export const Footer = () => {
         height={472}
       >
         <div className={styles.donateContainer}>
-          <img src="/donate-content.png" alt="" />
+          <a href="https://www.buymeacoffee.com/chaoxdesign" target="_blank">
+            <img src="/donate-content.png" alt="" />
+          </a>
         </div>
       </Modal>
       <footer className={styles.footer}>

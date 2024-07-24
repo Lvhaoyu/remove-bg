@@ -11,7 +11,12 @@ export const Header = () => {
     // } else {
     //   document.documentElement.setAttribute("data-theme", "dark");
     // }
-    message.info("darkmode is coming for soon.");
+    message.info("darkmode is coming soon.");
+    return false;
+  };
+
+  const handleClickFigma = () => {
+    message.info("Figma Plugin is coming soon.");
     return false;
   };
 
@@ -22,10 +27,10 @@ export const Header = () => {
         <span className={styles.titleContent}>ChaoX Background Remover</span>
       </h1>
       <div className={styles.link}>
-        <a href="">
+        <a href="#" onClick={handleClickFigma}>
           <Icons.figma width={18} height={18} />
         </a>
-        <a href="https://x.com/uidekko" target="_blank">
+        <a href="https://x.com/ChaoXDesign" target="_blank">
           <Icons.X width={18} height={18} className={styles.icon} />
         </a>
         <a href="https://github.com/Lvhaoyu/remove-bg" target="_blank">

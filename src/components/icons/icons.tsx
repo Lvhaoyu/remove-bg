@@ -10,11 +10,12 @@ import {
   ArrowUpRight,
   Loader,
   Download,
-  type Icon as LucideIcon,
+  WandSparkles,
 } from "lucide-react";
-import Maigc from "./magic";
 
-export type Icon = LucideIcon;
+import { type Icon as LucideIcon } from "lucide-react";
+
+export type Icon = typeof LucideIcon;
 
 export const Icons = {
   sun: SunMedium,
@@ -22,7 +23,7 @@ export const Icons = {
   twitter: Twitter,
   figma: Figma,
   cube: Cube,
-  magic: Maigc,
+  magic: WandSparkles,
   add: Add,
   loader: Loader,
   arrowUpRight: ArrowUpRight,

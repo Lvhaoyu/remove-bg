@@ -105,8 +105,8 @@ export const Content: React.FC = () => {
               className={imageData === "" ? style.btnDisbale : style.btn}
               icon={
                 <Icons.magic
-                  width={32}
-                  height={32}
+                  width={20}
+                  height={20}
                   className={imageData === "" ? style.magicDisable : ""}
                 />
               }
