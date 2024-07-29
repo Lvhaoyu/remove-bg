@@ -93,7 +93,7 @@
     top: 0;
   }
   100% {
-    top: 90%;
+    top: 74%;
   }
 }
 
@@ -101,7 +101,8 @@
   position: absolute;
   width: 100%;
   height: 120px;
-  opacity: 0.6;
+  z-index: 1;
+  background-size: cover;
   animation: moveDown 3s infinite ease-in-out;
   background-image: url("/loading.png");
 }

@@ -77,12 +77,12 @@ export const Content: React.FC = () => {
         <input {...getInputProps()} />
         {isDragActive && <div className={style.drag}>Drop Images Here</div>}
         <div className={`${style.content}`}>
+          {true && <div className={style.loading}></div>}
           <Icons.cube className={style.cubeLeft} />
           <Icons.cube className={style.cubeRight} />
           <Icons.cube className={style.cubeBottomLeft} />
           <Icons.cube className={style.cubeBottomRight} />
           <div className={style.board}>
-            {loading && <div className={style.loading}></div>}
             {imageData || resData ? (
               <img src={imageData || resData} alt="" className={style.img} />
             ) : (
