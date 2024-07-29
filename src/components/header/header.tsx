@@ -23,7 +23,7 @@ export const Header = () => {
   return (
     <header className={styles.header}>
       <h1 className={styles.title}>
-        <Avatar shape="square" size={32} src="/logo.png" />
+        <Avatar shape="square" size={32} src="/site-logo.png" />
         <span className={styles.titleContent}>ChaoX Background Remover</span>
       </h1>
       <div className={styles.link}>

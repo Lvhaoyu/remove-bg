@@ -90,10 +90,15 @@
 
 @keyframes moveDown {
   0% {
-    top: 0;
+    top: -90px;
+  }
+  80% {
+    top: 260px;
+    opacity: 1;
   }
   100% {
-    top: 74%;
+    top: 300px;
+    opacity: 0;
   }
 }
 
@@ -103,7 +108,7 @@
   height: 120px;
   z-index: 1;
   background-size: cover;
-  animation: moveDown 3s infinite ease-in-out;
+  animation: moveDown 3s infinite linear;
   background-image: url("/loading.png");
 }
 .dot {
