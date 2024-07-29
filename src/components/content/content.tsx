@@ -77,7 +77,7 @@ export const Content: React.FC = () => {
         <input {...getInputProps()} />
         {isDragActive && <div className={style.drag}>Drop Images Here</div>}
         <div className={`${style.content}`}>
-          {true && <div className={style.loading}></div>}
+          {loading && <div className={style.loading}></div>}
           <Icons.cube className={style.cubeLeft} />
           <Icons.cube className={style.cubeRight} />
           <Icons.cube className={style.cubeBottomLeft} />
