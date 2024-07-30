@@ -12,7 +12,7 @@ const config: Config = {
   debug: false,
   proxyToWorker: false,
   device: "gpu",
-  publicPath: "https://189966.xyz", // path to the wasm files
+  // publicPath: "https://189966.xyz", // path to the wasm files
   progress: (key, current, total) => {
     if (key.includes("fetch") && !showMsg) {
       showMsg = true;
